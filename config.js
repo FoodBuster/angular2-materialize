@@ -40,7 +40,7 @@ System.config({
     "materialize-css": "npm:materialize-css@0.97.7",
     "reflect-metadata": "npm:reflect-metadata@0.1.8",
     "rxjs": "npm:rxjs@5.0.0-beta.12",
-    "typescript": "npm:typescript@1.8.10",
+    "typescript": "npm:typescript@2.0.3",
     "zone.js": "npm:zone.js@0.6.25",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
@@ -403,7 +403,8 @@ System.config({
     "npm:timers-browserify@1.4.2": {
       "process": "npm:process@0.11.9"
     },
-    "npm:typescript@1.8.10": {
+    "npm:typescript@2.0.3": {
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "os": "github:jspm/nodelibs-os@0.1.0"
     },
     "npm:url@0.10.3": {

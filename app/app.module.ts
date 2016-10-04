@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
-import {MaterializeDirective} from "../src/index";
 import {MaterialInput,
         Option,
         MaterialSelect} from "./components/model-bindings/index"
@@ -21,6 +20,7 @@ import {
   ModelBindings
 } from './components/index';
 import { routing, appRoutingProviders } from './app.routing'
+import { MaterializeModule } from '../src/materialize-module';
 
 
 @NgModule({
@@ -37,7 +37,6 @@ import { routing, appRoutingProviders } from './app.routing'
     SideNav,
     DatePicker,
     ModelBindings,
-    MaterializeDirective,
     MaterialInput,
     MaterialSelect,
 
@@ -45,6 +44,7 @@ import { routing, appRoutingProviders } from './app.routing'
   imports: [
     BrowserModule,
     FormsModule,
+    MaterializeModule,
     routing
   ],
   providers: [
