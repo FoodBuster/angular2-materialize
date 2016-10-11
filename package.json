@@ -1,8 +1,9 @@
 {
   "name": "angular2-materialize",
+  "version": "5.2.1",
   "description": "Angular 2 support for Materialize CSS framework",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "dist/index.ts",
+  "typings": "dist/index",
   "scripts": {
     "commit": "git-cz",
     "clean": "rimraf dist",

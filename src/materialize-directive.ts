@@ -1,12 +1,12 @@
 import {
-  Directive,
-  ElementRef,
-  Input,
-  DoCheck,
-  OnChanges,
-  OnDestroy,
-  AfterViewInit,
-  EventEmitter
+    Directive,
+    ElementRef,
+    Input,
+    DoCheck,
+    OnChanges,
+    OnDestroy,
+    AfterViewInit,
+    EventEmitter, SimpleChanges
 } from '@angular/core';
 import {CustomEvent} from "./custom-event-polyfill"
 
@@ -58,7 +58,7 @@ export class MaterializeDirective implements AfterViewInit,DoCheck,OnChanges,OnD
       this.performElementUpdates();
     }
 
-    public ngOnChanges() {
+    public ngOnChanges(changes: SimpleChanges) {
       if (this.isSelect()) {
         setTimeout(() => this.performLocalElementUpdates(), 10);
       }

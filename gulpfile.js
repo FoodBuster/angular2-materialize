@@ -7,7 +7,7 @@ var exec = require('child_process').exec;
 var paths = {
     dist: './dist',
     sourceFiles: ['./src/*'],
-    toDelete: ['./dist/index.ts','./dist/custom-event-polyfill.ts','./dist/materialize-directive.ts','./dist/materialize-module.ts','./dist/src','./dist/app','./dist/test'],
+    toDelete: [/*'./dist/index.ts','./dist/custom-event-polyfill.ts','./dist/materialize-directive.ts','./dist/materialize-module.ts'*/,'./dist/src','./dist/app','./dist/test'],
     distSourcesFiles: ['./dist/src/*']
 };
 
